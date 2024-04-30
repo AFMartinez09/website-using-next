@@ -1,0 +1,4 @@
+Recuerde que cuando creamos una carpeta, esta se vuelve una ruta y con los parentesis
+nos permite poder agrupar otras rutas y sin crear una nueva (osea que auth no extiste
+como ruta y solamente colocamos un nombre como referencia para saber cómo lo vamos
+agrupar y qué es lo que hay dentro)
