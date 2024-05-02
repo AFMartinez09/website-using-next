@@ -1,0 +1,16 @@
+.container{
+  min-width: 6.25rem;
+  padding: 0.625rem;
+  border-radius: 1.5rem;
+  font-weight: bold;
+}
+
+.container:hover{
+  background-color: var(--text);
+  color: var(--textDark);
+}
+
+.active{
+  background-color: var(--background);
+  color: var(--textDark);
+}

@@ -1,0 +1,50 @@
+.links{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.logout{
+  padding: 0.7rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-weight: bold;
+  border: none;
+}
+
+.logout:hover{
+  background-color: var(--close);
+  color: var(--text);
+}
+
+.btnHamburger,
+.hamburger{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .links {
+    display: none;
+  }
+
+  .btnHamburger{
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger{
+    position: absolute;
+    top: 6.25rem;
+  right: 0;
+  width: 50dvw;
+  /* navbar size is 6.25rem and the other is hamburger */
+  height: calc(100dvh - 6.25rem);
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+}
