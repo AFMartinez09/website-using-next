@@ -1,0 +1,51 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+/* If you want to see it 
+Row
+image -> desc
+
+NOT
+column
+    image
+      v
+    desc
+*/
+.top{
+  margin-top: 2em;
+}
+
+.imageContainer{
+  width: 25em;
+  height: 20em;
+  position: relative;
+}
+
+.img{
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 1.5em;
+  margin: 0.5em 0 1.25em 0;
+}
+
+.desc{
+  margin-bottom: 1.25em;
+  font-weight: 300;
+  color: var(--textSoft);
+}
+
+@media (max-width:768px) {
+  .container{
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    display: flex;
+  } 
+}
