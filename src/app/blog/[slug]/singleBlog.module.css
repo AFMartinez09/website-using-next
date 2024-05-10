@@ -1,0 +1,56 @@
+.container{
+  display: flex;
+  gap: 4.25rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.imgContainer{
+  flex: 1;
+  position: relative;
+  /* 12.5rem = 6.25rem navbar + 6.25rem footer */
+  height: calc(100vh - 14.5rem);
+}
+
+.image{
+  border-radius: 10px;
+  padding: auto;
+}
+
+.textContainer{
+  flex: 2;
+  flex-direction: column;
+  gap: 3.125em;
+}
+
+.title{
+  font-size: 4em;
+}
+
+.detail{
+  display: flex;
+  gap: 1.25em;
+  margin: 2rem 0 2rem 0;
+}
+
+.avatar{
+  object-fit: cover;
+  border-radius: 50%;
+  width: 3.125em;
+  height: 3.125em;
+}
+
+.infoContainer{
+  font-size: 25px;
+}
+
+@media (max-width:768px){
+  .image{
+    margin-left: -0.3em;
+    padding: 1.5em;
+    border-radius: 7%;
+  }
+    .container{
+      flex-direction: column;
+    } 
+}
