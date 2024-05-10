@@ -1,0 +1,65 @@
+.container{
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.imageContainer {
+  flex: 1;
+  height: 19rem;
+  width: 19rem;
+  position: relative;
+}
+
+.logo{
+  object-fit: cover;
+}
+.textContainer{
+flex: 1;
+}
+
+.title {
+  text-align: center;
+  font-size: 55px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: var(--text)
+}
+
+.formContainer{
+  flex: 1;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input, .form textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 3px var(--hoverBtn);
+}
+
+.send{
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 3px var(--hoverBtn);
+  height: 1.5rem;
+}
+
+.send:hover{
+  background-color: var(--hoverBtn);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: bold;
+  
+}
+
+@media (max-width:768px) {
+  .container{
+    flex-direction: column;
+  } 
+}
