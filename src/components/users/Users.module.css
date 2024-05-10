@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 1.25em;
+  margin: 1rem;
+}
+
+
+.title{
+  color: var(--textDark);
+}
+
+.detailValue, .topic, .author{
+  font-weight: bold;
+}
