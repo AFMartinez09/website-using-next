@@ -3,6 +3,7 @@
 import styles from './Links.module.css';
 import NavLink from "../navLink/navLink";
 import { useState } from 'react';
+import Image from 'next/image';
 
 // ! Atomic design of Links and Navbar only recieve one component
 
@@ -50,11 +51,13 @@ const Links = () => {
           <NavLink item={{title: 'Login', path: '/login'}} />
         )}
       </div>
-      <button 
+      <Image 
+        src='/menu.svg' 
+        alt='' width={40} 
+        height={40}
         className={styles.btnHamburger}
-        onClick={() => setOpen((prev) => !prev)}>
-          Menu
-      </button>
+        onClick={() => setOpen((prev) => !prev)}
+        />
       {
         open && (
           <div className={styles.hamburger}>
